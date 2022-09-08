@@ -48,19 +48,19 @@
     <!-- Nav Item - Charts -->
     <li class="nav-item {{ set_active(['penyewaan.index','penyewaan.edit','penyewaan.show']) }}">
         <a class="nav-link" href="{{ route('penyewaan.index') }}">
-            <i class="fas fa-exchange-alt"></i>
+            <i class="fas fa-fw fa-exchange-alt"></i>
             <span>Penyewaan</span></a>
     </li>
 
     <!-- Nav Item - Tables -->
     <li class="nav-item {{ set_active(['pengembalian.index','pengembalian.edit','pengembalian.show']) }}">
         <a class="nav-link" href="{{ route('pengembalian.index') }}">
-            <i class="fas fa-exchange-alt"></i>
+            <i class="fas fa-fw fa-exchange-alt"></i>
             <span>Pengembalian</span></a>
     </li>
     <li class="nav-item {{ set_active(['pembayaran.index']) }}">
         <a class="nav-link" href="{{ route('pembayaran.index') }}">
-            <i class="fas fa-dollar-sign"></i>
+            <i class="fas fa-fw fa-dollar-sign"></i>
             <span>Pembayaran</span></a>
     </li>
 

@@ -56,13 +56,7 @@
         </div>
     </div>
 
-    <div class="card shadow mb-4">
-        <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Cari laporan pendapatan berdasarkan tanggal</h6>
-        </div>
-        <div class="card-body">
-        </div>
-    </div>
+    
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">Data Pembayaran <span class="badge badge-pill badge-secondary">{{ $statusTitle }}</span></h6>
@@ -85,6 +79,7 @@
                             <th>ID Motor</th>
                             <th>Tanggal Sewa</th>
                             <th>Tanggal Kembali</th>
+                            <th>Denda</th>
                             <th>Total Bayar</th>
                             <th>Status</th>
                             <th>Aksi</th>
@@ -102,6 +97,7 @@
                                     dihapus!</small>' !!}</td>
                             <td>{{ date('d-F-Y', strtotime($sewa->tanggal_sewa)) }}</td>
                             <td>{{ date('d-F-Y', strtotime($sewa->tanggal_kembali)) }}</td>
+                            <td>Rp. {{ $sewa->denda }}</td>
                             <td>Rp. {{ $sewa->total_biaya}}</td>
                             <td>
                                 @if(!$sewa->status)
