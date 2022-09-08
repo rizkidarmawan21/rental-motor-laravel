@@ -58,8 +58,8 @@
             <i class="fas fa-exchange-alt"></i>
             <span>Pengembalian</span></a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+    <li class="nav-item {{ set_active(['pembayaran.index']) }}">
+        <a class="nav-link" href="{{ route('pembayaran.index') }}">
             <i class="fas fa-dollar-sign"></i>
             <span>Pembayaran</span></a>
     </li>

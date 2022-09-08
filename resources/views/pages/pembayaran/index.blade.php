@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Pengembalian</h1>
+        <h1 class="h3 mb-0 text-gray-800">Pembayaran</h1>
     </div>
 
     @if ($errors->any())
@@ -18,11 +18,63 @@
     </div>
     @endif
 
+    <div class="row">
+
+        <!-- Earnings (Monthly) Card Example -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Pendapatan Hari Ini</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. {{ $pendapatan_hari }}</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Earnings (Monthly) Card Example -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Pendapatan Bulan Ini</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. {{ $pendapatan_bulan }}</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Data Sewa</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Cari laporan pendapatan berdasarkan tanggal</h6>
         </div>
         <div class="card-body">
+        </div>
+    </div>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Data Pembayaran <span class="badge badge-pill badge-secondary">{{ $statusTitle }}</span></h6>
+        </div>
+        <div class="card-body">
+            <div class="mx-auto mb-3">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="{{ route('pembayaran.index') }}" class="btn btn-dark">All</a>
+                    <a href="{{ route('pembayaran.index','status_bayar=0') }}" class="btn btn-secondary">Menunggu Pembayaran</a>
+                    <a href="{{ route('pembayaran.index','status_bayar=1') }}" class="btn btn-secondary">Telah Terbayar</a>
+                </div>
+            </div>
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
@@ -43,7 +95,8 @@
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $sewa->sewa_uuid }}</td>
-                            <td>{!! isset($sewa->penyewa->restuid)? $sewa->penyewa->restuid : '<small>Data penyewa telah
+                            <td>{!! isset($sewa->penyewa->restuid)? $sewa->penyewa->restuid : '<small>Data penyewa
+                                    telah
                                     dihapus!</small>' !!}</td>
                             <td>{!! isset($sewa->motor->mtruid) ? $sewa->motor->mtruid : '<small>Data motor telah
                                     dihapus!</small>' !!}</td>
