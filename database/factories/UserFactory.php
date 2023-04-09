@@ -19,7 +19,7 @@ class UserFactory extends Factory
             'name' => $this->faker->name(),
             'email' => 'admin@gmail.com',
             'email_verified_at' => now(),
-            'password' => Hash::make('Sebulsek21'), // password
+            'password' => Hash::make('password'), // password
             'remember_token' => Str::random(10),
         ];
     }
