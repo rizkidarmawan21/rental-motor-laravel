@@ -1,64 +1,36 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Aplikasi Menejemen Rental Motor
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi untuk menejemen Rental Motor menggunakan laravel.
 
-## About Laravel
+## Tech
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Laravel
+- Bootstrap
+- MySql
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## How to use ?
+- Clone this repo
+- Run composer install
+- Create Database
+- Copy `.env.example` paste `.env`
+- Setup database in `.env`
+- Run `php artisan key:generate`
+- Run `php artisan storage:link`
+- Migrate database run `php artisan migrate`
+- Running `php artisan serve`
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Preview
 
-## Learning Laravel
+<img width="1679" alt="image" src="https://user-images.githubusercontent.com/80609220/230765816-14022254-74c6-435e-a775-ef3b71bcb7d0.png">
+<img width="1679" alt="image" src="https://user-images.githubusercontent.com/80609220/230766128-9e3e7a13-1928-4187-841d-a84908cf45d8.png">
+<img width="1679" alt="image" src="https://user-images.githubusercontent.com/80609220/230766149-db3e7f7e-dc31-4dd4-93bb-3688b48a8843.png">
+<img width="1679" alt="image" src="https://user-images.githubusercontent.com/80609220/230766154-9d714f13-f524-4cde-8a75-b2d20701a259.png">
+<img width="1679" alt="image" src="https://user-images.githubusercontent.com/80609220/230766166-95b65fe8-ea8c-4418-9694-f4d744b9a0d5.png">
+<img width="1679" alt="image" src="https://user-images.githubusercontent.com/80609220/230766182-be7f52e8-279c-4afe-8f74-323373db059a.png">
+<img width="1679" alt="image" src="https://user-images.githubusercontent.com/80609220/230766194-db5c6d46-c11f-4cfa-90b6-c5643fe66995.png">
+<img width="1679" alt="image" src="https://user-images.githubusercontent.com/80609220/230766206-65549be8-0937-4742-943b-789fd9d52345.png">
+<img width="1679" alt="image" src="https://user-images.githubusercontent.com/80609220/230766216-c4e50d60-dacf-4219-8040-03d182706c8c.png">
+<img width="1679" alt="image" src="https://user-images.githubusercontent.com/80609220/230766226-06078843-ad5e-4bdc-8373-131b024f0933.png">
+<img width="1679" alt="image" src="https://user-images.githubusercontent.com/80609220/230766231-56903be9-8b75-4bba-966f-6d65f29a20fe.png">
+<img width="1678" alt="image" src="https://user-images.githubusercontent.com/80609220/230766244-42e8606c-ac65-41d3-85b8-4e767df50506.png">
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
